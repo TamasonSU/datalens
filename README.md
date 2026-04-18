@@ -67,6 +67,29 @@ fig = dl.plot(df, chart_type="bar", x="region", y="revenue")
 fig.show()
 ```
 
+**How to load your own file**
+
+**Option 1 — Put your file in the project folder (easiest)**
+
+Copy your Excel or CSV file into the `datalens_project` folder, then load it like this:
+
+```python
+df = dl.load("mydata.xlsx")
+df = dl.load("sales.csv")
+```
+
+**Option 2 — Use the full path to your file**
+
+No need to move your file, just paste the full path:
+
+```python
+# Windows
+df = dl.load("C:/Users/yourname/Documents/mydata.xlsx")
+
+# Mac / Linux
+df = dl.load("/Users/yourname/Documents/mydata.xlsx")
+```
+
 ## Run tests
 
 ```bash
