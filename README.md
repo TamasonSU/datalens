@@ -90,6 +90,59 @@ df = dl.load("C:/Users/yourname/Documents/mydata.xlsx")
 df = dl.load("/Users/yourname/Documents/mydata.xlsx")
 ```
 
+## Usage
+
+**Step 1 — Open Python**
+
+```bash
+python
+```
+
+**Step 2 — Load your data**
+
+```python
+import sys
+sys.path.insert(0, ".")
+import datalens as dl
+
+# Put your file in the project folder and load by filename
+df = dl.load("sales_data.csv")
+
+# Or use full path — no need to move your file
+df = dl.load("C:/Users/yourname/Documents/mydata.xlsx")
+```
+
+**Step 3 — Check data quality**
+
+```python
+print(dl.profile(df))
+```
+
+**Step 4 — Clean your data**
+
+```python
+df = dl.clean(df)
+```
+
+**Step 5 — Get chart suggestions**
+
+```python
+dl.suggest_charts(df)
+```
+
+**Step 6 — Plot a chart**
+
+```python
+fig = dl.plot(df, chart_type="bar", x="region", y="revenue", title="Revenue by Region")
+fig.show()
+```
+
+**Step 7 — Save chart as PNG**
+
+```python
+fig = dl.plot(df, chart_type="bar", x="region", y="revenue", save_png="chart.png")
+```
+
 ## Run tests
 
 ```bash
