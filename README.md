@@ -48,6 +48,25 @@ pip install -e ".[dev]"
 pytest
 ```
 
+## Troubleshooting
+
+**Cannot install pandas / plotly on Windows**
+
+If you see `THESE PACKAGES DO NOT MATCH THE HASHES` error, run this instead:
+
+```bash
+pip install pandas plotly openpyxl --no-deps --ignore-requires-python
+```
+
+**Still cannot install**
+
+Try upgrading pip first, then install again:
+
+```bash
+python -m pip install --upgrade pip
+pip install pandas plotly openpyxl
+```
+
 ## License
 
 MIT — see [LICENSE](LICENSE)
