@@ -1,0 +1,17 @@
+month,region,product,revenue,cost,units_sold
+Jan,North,Laptop,120000,80000,12
+Jan,South,Laptop,200000,130000,20
+Jan,East,Phone,95000,60000,19
+Jan,West,Phone,175000,110000,35
+Feb,North,Laptop,135000,90000,14
+Feb,South,Tablet,88000,55000,22
+Feb,East,Laptop,160000,105000,16
+Feb,West,Tablet,72000,45000,18
+Mar,North,Phone,110000,70000,22
+Mar,South,Laptop,225000,148000,23
+Mar,East,Tablet,65000,40000,13
+Mar,West,Laptop,190000,125000,19
+Apr,North,Tablet,95000,60000,24
+Apr,South,Phone,145000,92000,29
+Apr,East,Laptop,180000,118000,18
+Apr,West,Phone,130000,82000,26
