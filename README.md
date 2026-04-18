@@ -13,6 +13,8 @@
 ---
 
 DataLens is a lightweight Python library that turns exploratory data analysis into a single line of code.
+<img width="2005" height="653" alt="image" src="https://github.com/user-attachments/assets/4d07aa37-18c9-4da7-ac76-c19056a3c991" />
+
 
 ```python
 import datalens as dl
