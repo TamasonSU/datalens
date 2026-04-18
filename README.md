@@ -67,6 +67,14 @@ python -m pip install --upgrade pip
 pip install pandas plotly openpyxl
 ```
 
+**ModuleNotFoundError: No module named 'narwhals'**
+
+Run this to fix:
+
+```bash
+pip install narwhals
+```
+
 ## License
 
 MIT — see [LICENSE](LICENSE)
