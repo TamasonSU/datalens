@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "datalens"
+version = "0.1.0"
+description = "Load, clean, and visualize data in just a few lines"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+keywords = ["data", "visualization", "dashboard", "pandas", "plotly"]
+dependencies = ["pandas>=2.0", "plotly>=5.0", "openpyxl>=3.1", "requests>=2.28"]
+
+[project.optional-dependencies]
+dashboard = ["streamlit>=1.30"]
+dev = ["pytest>=8.0", "pytest-cov>=4.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
